@@ -33,12 +33,18 @@ class CardBerita extends StatelessWidget {
               ),
             ),
           ),
-          Text(
-            judul,
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                judul,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
-          )
+          ),
         ],
       ),
     );
