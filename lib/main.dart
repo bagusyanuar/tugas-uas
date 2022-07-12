@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:tugas_uas/views/berita.dart';
+import 'package:tugas_uas/views/detail_berita.dart';
+import 'package:tugas_uas/views/edit_berita.dart';
 import 'package:tugas_uas/views/homepage.dart';
+import 'package:tugas_uas/views/tambah_berita.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,6 +20,10 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         "/": (context) => const Homepage(),
+        "/berita": (context) => const Berita(),
+        "/detail-berita": (context) => const DetailBerita(),
+        "/tambah-berita": (context) => const TambahBerita(),
+        "/edit-berita": (context) => const EditBerita(),
       },
     );
   }
