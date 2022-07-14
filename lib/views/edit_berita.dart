@@ -17,7 +17,7 @@ class _EditBeritaState extends State<EditBerita> {
   String judul = '';
   String konten = '';
   PlatformFile? file;
-  String _fileTugas = "Cari Gambar Konten....";
+  String _fileTugas = "Cari Gambar Cover....";
   bool isLoading = true;
   Map<String, dynamic> _berita = {};
   TextEditingController _textJudulController = new TextEditingController();
@@ -38,6 +38,7 @@ class _EditBeritaState extends State<EditBerita> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Fikom UDB"),
+        backgroundColor: Colors.green[800],
       ),
       body: Container(
         height: double.infinity,
@@ -64,7 +65,7 @@ class _EditBeritaState extends State<EditBerita> {
                   const Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      "Form Tambah Berita",
+                      "Form Edit Berita",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
@@ -104,8 +105,10 @@ class _EditBeritaState extends State<EditBerita> {
                       decoration: InputDecoration(
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10)),
-                          contentPadding:
-                              const EdgeInsets.symmetric(horizontal: 10),
+                          contentPadding: const EdgeInsets.symmetric(
+                            horizontal: 10,
+                            vertical: 10,
+                          ),
                           hintText: "Konten Berita"),
                     ),
                   ),
@@ -113,7 +116,7 @@ class _EditBeritaState extends State<EditBerita> {
                     margin: const EdgeInsets.only(bottom: 5),
                     child: const Align(
                       alignment: Alignment.bottomLeft,
-                      child: Text("Gambar Konten"),
+                      child: Text("Gambar Cover Berita"),
                     ),
                   ),
                   Container(
@@ -138,7 +141,7 @@ class _EditBeritaState extends State<EditBerita> {
                               color: Colors.grey,
                             ),
                             child: const Center(
-                              child: Text("Cari File"),
+                              child: Text("Cari Gambar"),
                             ),
                           ),
                         )
@@ -155,7 +158,7 @@ class _EditBeritaState extends State<EditBerita> {
                         child: Container(
                           height: 70,
                           decoration: BoxDecoration(
-                            color: Colors.green[700],
+                            color: Colors.blue[800],
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: isLoading
@@ -183,7 +186,7 @@ class _EditBeritaState extends State<EditBerita> {
                                 )
                               : const Center(
                                   child: Text(
-                                    "Tambah",
+                                    "Edit",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,

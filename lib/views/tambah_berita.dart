@@ -17,7 +17,7 @@ class _TambahBeritaState extends State<TambahBerita> {
   String judul = '';
   String konten = '';
   PlatformFile? file;
-  String _fileTugas = "Cari Gambar Konten....";
+  String _fileTugas = "Cari Gambar Cover....";
   bool isLoading = false;
 
   @override
@@ -25,6 +25,7 @@ class _TambahBeritaState extends State<TambahBerita> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Fikom UDB"),
+        backgroundColor: Colors.green[800],
       ),
       body: Container(
         height: double.infinity,
@@ -91,7 +92,7 @@ class _TambahBeritaState extends State<TambahBerita> {
               margin: const EdgeInsets.only(bottom: 5),
               child: const Align(
                 alignment: Alignment.bottomLeft,
-                child: Text("Gambar Konten"),
+                child: Text("Gambar Cover Berita"),
               ),
             ),
             Container(
@@ -116,7 +117,7 @@ class _TambahBeritaState extends State<TambahBerita> {
                         color: Colors.grey,
                       ),
                       child: const Center(
-                        child: Text("Cari File"),
+                        child: Text("Cari Gambar"),
                       ),
                     ),
                   )
@@ -133,7 +134,7 @@ class _TambahBeritaState extends State<TambahBerita> {
                   child: Container(
                     height: 70,
                     decoration: BoxDecoration(
-                      color: Colors.green[700],
+                      color: Colors.blue[800],
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: isLoading

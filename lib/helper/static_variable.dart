@@ -1,4 +1,4 @@
-const HostAddress = "http://192.168.37.143:8000";
+const HostAddress = "http://192.168.137.53:8000";
 
 class Example {
   static List<dynamic> listBerita = [

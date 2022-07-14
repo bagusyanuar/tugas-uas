@@ -30,6 +30,7 @@ class _DetailBeritaState extends State<DetailBerita> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Fikom UDB"),
+        backgroundColor: Colors.green[800],
       ),
       body: Container(
         height: double.infinity,

@@ -25,6 +25,7 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
         appBar: AppBar(
           title: const Text('Fikom UDB'),
+          backgroundColor: Colors.green[800],
         ),
         body: RefreshIndicator(
           onRefresh: () {
@@ -44,8 +45,8 @@ class _HomepageState extends State<Homepage> {
                       children: [
                         CarouselSlider(
                           items: [
-                            'https://udb.ac.id/storage/app/uploads/public/627/e11/c96/627e11c96eb1c494317366.jpg',
-                            'https://udb.ac.id/storage/app/uploads/public/625/e5e/a09/625e5ea099274584498973.jpg',
+                            'https://udb.ac.id/storage/app/uploads/public/62c/cd5/bdc/62ccd5bdc2e42250677887.jpg',
+                            'https://udb.ac.id/storage/app/uploads/public/629/168/0a0/6291680a0fc42767519833.jpg',
                             'https://udb.ac.id/storage/app/uploads/public/625/11a/0f2/62511a0f2cbb9524022624.jpg',
                           ].map((e) {
                             return Builder(

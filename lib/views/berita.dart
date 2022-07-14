@@ -28,6 +28,7 @@ class _BeritaState extends State<Berita> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Fikom UDB"),
+        backgroundColor: Colors.green[800],
       ),
       floatingActionButton: isLoading
           ? Container()
